@@ -28,9 +28,9 @@
 </head>
 
 <body>
-    <header class="container mx-auto p-6 lg:px-10 ">
+    <header class="container mx-auto px-4 lg:px-10 ">
         <!-- navbar section -->
-        <nav class="flex  lg:flex-row justify-between items-center mt-12">
+        <nav class="flex  lg:flex-row justify-between items-center mt-4 lg:mt-8">
             <div class="flex items-center">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -74,9 +74,9 @@
             </div>
         </div>
     </header>
-    <main class="container mx-auto lg:px-10">
+    <main class="container mx-auto px-4 lg:px-10">
         <!-- The Legal Practice Area section -->
-        <section class="mt-36 p-6 lg:p-0">
+        <section class="mt-36 ">
             <h2 class="text-4xl text-[#414040] font-extrabold text-center eb-font">The Legal Practice Area</h2>
             <p class="lg:w-[850px] mx-auto text-center pop-font mt-5">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
@@ -171,7 +171,7 @@
             </div>
         </section>
         <!-- What Our Client Say -->
-        <section class="mt-36 mb-36 p-6 lg:p-0">
+        <section class="mt-36 mb-36 ">
             <h2 class="text-4xl text-[#414040] font-extrabold text-center eb-font">What Our Client Say</h2>
             <p class="lg:w-[850px] mx-auto text-center pop-font mt-5">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
@@ -243,7 +243,7 @@
             </div>
         </section>
         <!-- FAQ Section -->
-        <section class="p-6 lg:p-0">
+        <section class="">
             <h2 class="text-4xl lg:text-5xl text-[#414040] font-extrabold text-center eb-font">Frequently Asked Any
                 Questions</h2>
             <p class="lg:w-[850px] mx-auto text-center pop-font mt-5">
@@ -303,7 +303,7 @@
             </div>
         </section>
         <!-- Contact With Us section -->
-        <section class="my-28 p-6 lg:p-0">
+        <section class="my-28 ">
             <h2 class="text-4xl lg:text-5xl text-[#414040] font-extrabold text-center eb-font">Contact With Us</h2>
             <p class="lg:w-[850px] mx-auto text-center pop-font mt-5">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
@@ -339,23 +339,25 @@
                             Sunday: 9AM to 1 PM</p>
                     </div>
                 </div>
-                <div class="w-full flex-1 space-y-8">
-                    <input type="text" placeholder="Your Name"
-                        class="input input-bordered w-full bg-[#F3F3F3] border-none p-8" />
-                    <input type="email" placeholder="Your Email" required
-                        class="input input-bordered w-full bg-[#F3F3F3] border-none p-8" />
-                    <input type="text" placeholder="Subject" required
-                        class="input input-bordered w-full bg-[#F3F3F3] border-none p-8" />
-                    <textarea class="textarea textarea-bordered w-full bg-[#F3F3F3] border-none" rows="7"
-                        placeholder="Your Message"></textarea>
-                    <button class="btn bg-[#B68C5A] w-full pop-font text-xl font-semibold text-white">Send
-                        Message</button>
-                </div>
+                <form action="">
+                    <div class="w-full flex-1 space-y-8">
+                        <input type="text" placeholder="Your Name"
+                            class="input input-bordered w-full bg-[#F3F3F3] border-none p-8" />
+                        <input type="email" placeholder="Your Email" required
+                            class="input input-bordered w-full bg-[#F3F3F3] border-none p-8" />
+                        <input type="text" placeholder="Subject" required
+                            class="input input-bordered w-full bg-[#F3F3F3] border-none p-8" />
+                        <textarea class="textarea textarea-bordered w-full bg-[#F3F3F3] border-none" rows="7"
+                            placeholder="Your Message"></textarea>
+                        <button class="btn bg-[#B68C5A] w-full pop-font text-xl font-semibold text-white">Send
+                            Message</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
     <footer class="bg-[#111111] py-24 lg:px-10">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between text-center lg:text-start gap-10 lg:gap-0 ">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between text-center lg:text-start gap-10 lg:gap-0 px-4">
             <div>
                 <div class="flex flex-col justify-center items-center lg:items-start">
                     <img src="images/logo.png" alt="">
@@ -388,10 +390,12 @@
                 <button class="eb-font text-2xl font-bold text-white mb-8">Subscribe</button>
                 <div class="text-white pop-font space-y-3">
                     <p class="lg:w-2/4">Subscribe for our latest & Articles. <br> We Won’t Give You Spam Mails</p>
-                    <div class="flex items-center lg:items-start justify-center lg:justify-start">
-                        <input type="email" placeholder="Email Address" class="input input-ghost w-2/4 bg-white" />
-                        <button class="btn bg-[#B68C5A] border-none -ml-3"><img src="images/Frame.svg" alt=""></button>
-                    </div>
+                    <form action="">
+                        <div class="flex items-center lg:items-start justify-center lg:justify-start">
+                            <input type="email" placeholder="Email Address" class="input input-ghost w-2/4 bg-white" required />
+                            <button class="btn bg-[#B68C5A] border-none -ml-3"><img src="images/Frame.svg" alt=""></button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
