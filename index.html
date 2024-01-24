@@ -28,9 +28,9 @@
 </head>
 
 <body>
-    <header class="container mx-auto px-4 lg:px-10 ">
+    <header class="container mx-auto px-4 lg:px-10 sticky top-0 z-10">
         <!-- navbar section -->
-        <nav class="flex  lg:flex-row justify-between items-center mt-4 lg:mt-8">
+        <nav class="flex  lg:flex-row justify-between items-center mt-4 lg:mt-8 bg-[#fff] p-2">
             <div class="flex items-center">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -56,6 +56,8 @@
             <button class="hidden lg:flex btn pop-font bg-[#B68C5A] text-white text-lg font-semibold">Free Consultation</button>
             <img class="lg:hidden w-1/4" src="images/logo2.png" alt="">
         </nav>
+    </header>
+    <main class="container mx-auto px-4 lg:px-10">
         <!-- Banner Section -->
         <div class="flex items-center justify-center bg-no-repeat bg-cover bg-center object-cover text-center py-[104px]  rounded-xl mt-14 lg:h-[650px]"
             style="background-image: linear-gradient(to top, #111 0%, rgba(17, 17, 17, 0.00) 100%), url('images/banner.png');">
@@ -73,11 +75,9 @@
                 </div>
             </div>
         </div>
-    </header>
-    <main class="container mx-auto px-4 lg:px-10">
         <!-- The Legal Practice Area section -->
         <section class="mt-36 ">
-            <h2 class="text-4xl text-[#414040] font-extrabold text-center eb-font">The Legal Practice Area</h2>
+            <h2 class="text-3xl lg:text-4xl text-[#414040] font-extrabold text-center eb-font">The Legal Practice Area</h2>
             <p class="lg:w-[850px] mx-auto text-center pop-font mt-5">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                 alteration in some form, by injected humour.
@@ -172,7 +172,7 @@
         </section>
         <!-- What Our Client Say -->
         <section class="mt-36 mb-36 ">
-            <h2 class="text-4xl text-[#414040] font-extrabold text-center eb-font">What Our Client Say</h2>
+            <h2 class="text-3xl lg:text-4xl text-[#414040] font-extrabold text-center eb-font">What Our Client Say</h2>
             <p class="lg:w-[850px] mx-auto text-center pop-font mt-5">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                 alteration in some form, by injected humour.
@@ -244,7 +244,7 @@
         </section>
         <!-- FAQ Section -->
         <section class="">
-            <h2 class="text-4xl lg:text-5xl text-[#414040] font-extrabold text-center eb-font">Frequently Asked Any
+            <h2 class="text-3xl lg:text-4xl text-[#414040] font-extrabold text-center eb-font">Frequently Asked Any
                 Questions</h2>
             <p class="lg:w-[850px] mx-auto text-center pop-font mt-5">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
@@ -304,13 +304,13 @@
         </section>
         <!-- Contact With Us section -->
         <section class="my-28 ">
-            <h2 class="text-4xl lg:text-5xl text-[#414040] font-extrabold text-center eb-font">Contact With Us</h2>
+            <h2 class="text-3xl lg:text-4xl text-[#414040] font-extrabold text-center eb-font">Contact With Us</h2>
             <p class="lg:w-[850px] mx-auto text-center pop-font mt-5">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                 alteration in some form, by injected humour.
             </p>
             <div class="flex flex-col lg:flex-row gap-8 mt-16">
-                <div class="grid grid-cols-1 lg:grid-cols-2 flex-1 gap-10 lg:gap-0">
+                <div class="grid grid-cols-1 lg:grid-cols-2 flex-1 gap-10 lg:gap-0 shadow-xl p-5 rounded-xl bg-[#FFF]">
                     <div
                         class="flex flex-col justify-center items-center bg-[#F3F3F3] p-16 space-y-4 border-b-2 border-r-2">
                         <img src="images/address.png" alt="">
@@ -339,15 +339,15 @@
                             Sunday: 9AM to 1 PM</p>
                     </div>
                 </div>
-                <form action="">
-                    <div class="w-full flex-1 space-y-8">
+                <form action="" class="w-full flex-1 shadow-xl p-5 rounded-xl bg-[#FFF]">
+                    <div class="space-y-7">
                         <input type="text" placeholder="Your Name"
                             class="input input-bordered w-full bg-[#F3F3F3] border-none p-8" />
                         <input type="email" placeholder="Your Email" required
                             class="input input-bordered w-full bg-[#F3F3F3] border-none p-8" />
                         <input type="text" placeholder="Subject" required
                             class="input input-bordered w-full bg-[#F3F3F3] border-none p-8" />
-                        <textarea class="textarea textarea-bordered w-full bg-[#F3F3F3] border-none" rows="7"
+                        <textarea class="textarea textarea-bordered w-full bg-[#F3F3F3] border-none" rows="12"
                             placeholder="Your Message"></textarea>
                         <button class="btn bg-[#B68C5A] w-full pop-font text-xl font-semibold text-white">Send
                             Message</button>
